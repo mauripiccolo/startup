@@ -1,4 +1,4 @@
-body{
+body {
   font: 14px Helvetica;
   width: auto;
   height: auto;
@@ -8,10 +8,10 @@ aside,
 footer,
 header,
 nav,
-section{
+section {
   display: block;
 }
-header{
+header {
   text-align: center;
   width: auto;
   height: 30%;
@@ -19,25 +19,25 @@ header{
   margin-bottom: 10px;
   background: #ff9933;
 }
-section{
+section {
   width: 60%;
   height: 40%;
   float: left;
   background: #99ccff;
 }
-aside{
+aside {
   width: 20%;
   height: 40%;
   float: right;
   background: #cc99ff;
 }
-nav{
+nav {
   width: 20%;
   height: 40%;
   float: left;
   background: #00ffff;
 }
-footer{
+footer {
   text-align: center;
   width: 100%;
   height: 30%;
