@@ -6,11 +6,15 @@
     <title>HTML+CSS+JQuery</title>
     <link href="normalize.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/css/grid.css">
-    <link href="4style.css" rel="stylesheet" type="text/css" title="Default Style"/>        
+    <link href="7style.css" rel="stylesheet" type="text/css" title="Default Style"/>        
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function(){        
-          $("p.hiddenText").hide();
+      $(document).ready(function(){
+        $("button").click(function(){
+          var response = $.get("http://bootcamp.aws.af.cm/welcome/mauricio",function(response){
+              $("p.response").text(response);
+          });
+        });
       });      
     </script>
   </head>
@@ -25,17 +29,12 @@
           <li>Elemento 1</li>
           <li>Elemento 2</li>
           <li>Elemento 3</li>
-        </ul>
-        <p class="hiddenText">Hello World</p>
+        </ul>        
       </nav>
       <section class= "content">
         <article>
-          <h2>Título 1</h2>
-          <p>Texto 1</p>
-        </article>
-        <article>
-          <h2>Título 2</h2>
-          <p>Texto 2</p>
+          <h2>Response</h2>
+          <p class="response">...</p>
         </article>
         <p>
           <button type="button"> Button (button)</button>

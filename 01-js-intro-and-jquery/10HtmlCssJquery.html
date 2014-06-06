@@ -6,12 +6,23 @@
     <title>HTML+CSS+JQuery</title>
     <link href="normalize.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="/css/grid.css">
-    <link href="4style.css" rel="stylesheet" type="text/css" title="Default Style"/>        
+    <link href="10style.css" rel="stylesheet" type="text/css" title="Default Style"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){        
-          $("p.hiddenText").hide();
-      });      
+    <script type="text/javascript" src="jquery.highlight-4.js"></script>    
+    <script type="text/javascript" src="jquery.highlight-4.closure.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var aux;
+        $("button").click(function(){
+         $.getJSON("http://bootcamp.aws.af.cm/welcome/mauricio",function(data){          
+            $.each( data, function( key, val ) {
+              //aux = val.replace("mauricio!"," <mark> "+" mauricio! "+" </mark> ");
+              aux = val.split(" ");              
+              $("span.response").text(aux[0]+" <mark> "+aux[1]+" </mark> ");
+            });
+          });
+        });
+      });            
     </script>
   </head>
     <body>
@@ -25,17 +36,13 @@
           <li>Elemento 1</li>
           <li>Elemento 2</li>
           <li>Elemento 3</li>
-        </ul>
-        <p class="hiddenText">Hello World</p>
+        </ul>        
       </nav>
       <section class= "content">
         <article>
-          <h2>Título 1</h2>
-          <p>Texto 1</p>
-        </article>
-        <article>
-          <h2>Título 2</h2>
-          <p>Texto 2</p>
+          <h2>Response</h2>
+          <span class="response"></span>
+          
         </article>
         <p>
           <button type="button"> Button (button)</button>
