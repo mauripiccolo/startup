@@ -15,14 +15,17 @@
         var aux;
         $("button").click(function(){
          $.getJSON("http://bootcamp.aws.af.cm/welcome/mauricio",function(data){          
-            $.each( data, function( key, val ) {
-              //aux = val.replace("mauricio!"," <mark> "+" mauricio! "+" </mark> ");
+            $.each( data, function( key, val ) {              
               aux = val.split(" ");              
-              $("span.response").text(aux[0]+" <mark> "+aux[1]+" </mark> ");
+              $("div.responsePart1").text(aux[0])
+              $("mark").text(aux[1]);
             });
           });
         });
-      });            
+      });
+    </script>
+    <script>
+      $("div.responsePart2").css( "background", "yellow" );
     </script>
   </head>
     <body>
@@ -41,7 +44,9 @@
       <section class= "content">
         <article>
           <h2>Response</h2>
-          <span class="response"></span>
+          <div class="responsePart1"></div>
+          <div class="responsePart2">
+            <p><mark></mark></p</div>
           
         </article>
         <p>
