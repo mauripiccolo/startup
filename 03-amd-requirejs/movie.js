@@ -1,4 +1,4 @@
-define('js/movie', function(){   
+define(function(){
     var Movie= function() {
         var attributes = new Hashmap();
         var observers = [];
@@ -11,10 +11,10 @@ define('js/movie', function(){
         this.get = function (key) {
           return attributes.getItem(key);
         };
-        this.play = function () {          
+        this.play = function () {
           this.notifyObservers("play "+ this.get("title"));
         };
-        this.stop = function () {          
+        this.stop = function () {
           this.notifyObservers("stop "+ this.get("title"));
         };
         this.addObserver= function(observer) {
@@ -37,8 +37,6 @@ define('js/movie', function(){
           actors.push(actor);
           this.notifyObservers("added "+ actor.get("name")+ " in "+ this.get("title"));
         }
-      }  
-    return {
-        Movie: new Movie()
-    };
+      }
+    return Movie;
 });
