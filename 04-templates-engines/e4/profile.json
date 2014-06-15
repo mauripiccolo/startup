@@ -1,0 +1,61 @@
+{
+   "name": "Mauricio M. Piccolo",   
+   "address":
+   {
+       "streetAddress": "Gral. Paz 1321",
+       "city": "Tandil",
+       "state": "Buenos Aires",
+       "country": "Argentina",
+       "postalCode": "7000"
+   },
+   "Contact":
+   {                
+         "MobilePhone": "249-4347902",                     
+         "E-Mail": "mauripiccolo@gmail.com",                
+         "LinkedIn": "http://ar.linkedin.com/pub/mauricio-m-piccolo/95/364/66a"
+   },
+   "Education":
+   {
+      "college":"Universidad Nacional del Centro de la Provincia de Buenos Aires"
+   },
+   "ProgrammingLanguages":
+   {         
+     "item1": "Java",
+     "item2": "C#",
+     "item3": "C",
+     "item4": "C++",
+     "item5": "Haxe",
+     "item6": "JavaLog",
+     "item7": "Pascal"
+   },
+  "SoftwareDevelopmentMethodologies":
+   {         
+     "item1": "ASML",
+     "item2": "UML",
+     "item3": "Scrum",
+     "item4": "XP",
+     "item5": "Crystal"
+   },
+  "Databases":
+   {         
+     "item1": "SQL(Oracle, MySQL)",
+     "item2": "No SQL(DB4O-DataBase for Objects)"
+   },
+  "SdkLibraries":       
+   {         
+     "item1": "SDK Android",
+     "item2": "SDK Kinect", 
+     "item3": "Microsoft XNA", 
+     "item4": "Box2d" , 
+     "item5": "Lucene", 
+     "item6": "Classifier4J", 
+     "item7": "VectorClassifier",
+     "item8": "Jericho HTML Parser",
+     "item9": "Weka"         
+   },
+  "Languages":
+   {
+     "item1": "Spanish",     
+     "item2": "English (Intermediate 1)"
+   }       
+}

@@ -1,0 +1,82 @@
+body {
+  font: 14px Helvetica;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.rigthSide,
+.leftSide,
+.content,
+header{
+  display: block;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;  
+  margin-top: -20px;
+}
+.content,
+.rigthSide,
+.leftSide {
+    height: 850px;
+} 
+.rigthSide,.leftSide {  
+  width: 60px;  
+  float: right;  
+  background-color: yellow;
+}
+.leftSide {
+  float: left;  
+}
+footer {
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  float: left;
+  background-color: #000000;
+}
+h1 {
+  text-align: center;
+}
+
+.photo {
+  margin: 10px;  
+  border-color: black;  
+  float: left;
+  left: 50px;
+  top: 50px;
+}
+.pictureWrapper {
+  margin: 15px;
+  margin-left: 150px; 
+  background-color: #000000;  
+  width: 200px;
+  height: 220px;  
+}
+a,.imageLinkedIn {  
+  margin-left: 100px;
+}
+.imageUnicen {  
+  margin-right: 30px;
+  margin-top: 60px;
+  float: right;
+}
+.basicInfo {
+  width: 40%;
+  margin-left: 10px;
+  float: left;
+}
+.skills,
+.education {
+  width: 45%;
+  float: right;
+  margin-right: 10px;
+}
+.skills {
+  margin-top: 10;
+}
+.education {
+  top: 20px;
+  height: 100px;
+}

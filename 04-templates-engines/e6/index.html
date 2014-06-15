@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Topic 4</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" title="Default Style"/>
+    <script src="libs/jquery-1.11.1.js"></script>
+    <script src="libs/handlebars-v1.3.0.js"></script>    
+    <script src="libs/underscore.js"></script>
+    <script src="dust-core-0.3.0.min.js"></script>
+    <script id="profile-template" type="text/x-handlebars-template">
+        <div class="basicInfo">
+            <div class= "pictureWrapper">
+              <img src= "assets/photo.jpg" class="photo" width="180" height="200">
+            </div>
+            <div class= "personalInfo">         
+              <h1>{{name}}</h1>              
+              <h3>Address: {{address.streetAddress}}, {{address.city}} - {{address.state}} - {{address.country}}.</h3>
+              <h3>Mobile: {{Contact.MobilePhone}}</h3>
+              <h3>E-mail: {{Contact.E-Mail}}</h3>
+              <a href= {{Contact.LinkedIn}}>
+                <img class= "imageLinkedIn" src= "assets/logo_in_nav_44x36.png" alt="LinkedIn">
+              </a>
+            </div>
+        </div>      
+        <div class= "education">          
+          <a href= "http://unicen.edu.ar/">
+            <img class= "imageUnicen" src= "assets/logo_unicen.png" alt="Unicen">
+          </a>
+          <h2>Education</h2>
+          <h5 class= "items">{{Education.college}}.</h5>
+                              
+        </div>
+        <div class= "skills">
+          <h2>Skills</h2>
+          <h3>Programming Languages</h3>
+          <ul>
+          {{#each ProgrammingLanguages}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>
+          
+          <h3>Software Development Methodologies</h3>
+          <ul>
+          {{#each SoftwareDevelopmentMethodologies}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>
+
+          <h3>Databases</h3>
+          <ul>
+          {{#each Databases}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>          
+          <h3>SDK and Libraries</h3>
+          <ul>
+          {{#each SdkLibraries}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>          
+          <h3>Languages</h3>
+          <ul>
+          {{#each Languages}}
+            <li>{{this}}</li>
+          {{/each}}
+          </ul>         
+        </div>
+        <div class= "languages">
+        </div>
+    </script>
+    <script type="text/javascript">
+        //wait for page to load
+        $(document).ready(function(){
+          // Extract the text from the template .html() is the jquery helper method for that
+          var raw_template = $('#profile-template').html();
+          // Compile that into an handlebars template
+          var template = Handlebars.compile(raw_template);
+          // Retrieve the placeHolder where the Posts will be displayed 
+          var placeHolder = $("#my-container");
+          // Fetch all Blog Posts data from server in JSON
+          $.get("profile.json",function(data,status,xhr){        
+          // Generate the HTML for each post
+          var html = template(data);
+          // Render the posts into the page
+          placeHolder.append(html);            
+          });
+        });
+    </script>
+  </head>
+  <body class= "body">
+    <header>
+        <h1> </h1>
+    </header>
+    <aside class= "rigthSide">      
+    </aside>
+    <nav class= "leftSide">   
+    </nav>
+    <div  id="my-container" class= "content">        
+    </div>
+    <footer>
+      <h1>  </h1>
+    </footer>
+  </body>
+</html>

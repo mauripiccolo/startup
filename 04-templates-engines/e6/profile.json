@@ -1,0 +1,61 @@
+{
+   "name": "Mauricio M. Piccolo",   
+   "address":
+   {
+       "streetAddress": "Gral. Paz 1321",
+       "city": "Tandil",
+       "state": "Buenos Aires",
+       "country": "Argentina",
+       "postalCode": "7000"
+   },
+   "Contact":
+   {                
+         "MobilePhone": "249-4347902",                     
+         "E-Mail": "mauripiccolo@gmail.com",                
+         "LinkedIn": "http://ar.linkedin.com/pub/mauricio-m-piccolo/95/364/66a"
+   },
+   "Education":
+   {
+      "college":"Universidad Nacional del Centro de la Provincia de Buenos Aires"
+   },
+   "ProgrammingLanguages":
+   [         
+    "Java",
+    "C#",
+    "C",
+    "C++",
+    "Haxe",
+    "JavaLog",
+    "Pascal"
+   ],
+  "SoftwareDevelopmentMethodologies":
+   [         
+     "ASML",
+     "UML",
+     "Scrum",
+     "XP",
+     "Crystal"
+   ],
+  "Databases":
+   [         
+     "SQL(Oracle, MySQL)",
+     "No SQL(DB4O-DataBase for Objects)"
+   ],
+  "SdkLibraries":       
+   [        
+     "SDK Android",
+     "SDK Kinect", 
+     "Microsoft XNA", 
+     "Box2d" , 
+     "Lucene", 
+     "Classifier4J", 
+     "VectorClassifier",
+     "Jericho HTML Parser",
+     "Weka"         
+   ],
+  "Languages":
+   [
+     "Spanish",     
+     "English (Intermediate 1)"
+   ]       
+}
