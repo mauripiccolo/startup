@@ -1,0 +1,42 @@
+[
+    {        
+      "name": "The Amazing Spider-Man",
+      "year": "2014",
+      "duration": "142 min",
+      "genre": "Action | Adventure | Fantasy",
+      "rating": "7,4",
+      "summary": "Peter Parker runs the gauntlet as the mysterious company Oscorp sends up a slew of super villains against him, impacting his life.",
+      "director": "Marc Webb",
+      "cast": "Andrew Garfield, Emma Stone, Jamie Foxx"
+    },
+    {                
+      "name": "Godzilla",
+      "year": "2014",
+      "duration": "123 min",
+      "genre": "Action | Sci-Fi | Thriller",
+      "rating": "7,2",
+      "summary": "The world's most famous monster is pitted against malevolent creatures who, bolstered by humanity's scientific arrogance, threaten our very existence.",
+      "director": "Gareth Edwards",
+      "cast": "Aaron Taylor-Johnson, Elizabeth Olsen, Bryan Cranston"
+    },
+    {
+      "name": "Maleficent",
+      "year": "2014",
+      "duration": "97 min",
+      "genre": "Action | Adventure | Family",
+      "rating": "7,5",
+      "summary": "A vengeful fairy is driven to curse an infant princess, only to discover that the child may be the one person who can restore peace to their troubled land.",
+      "director": "Robert Stromberg",
+      "cast": "Angelina Jolie, Elle Fanning, Sharlto Copley "
+    },
+    {
+      "name": "X-Men: Days of Future Past",
+      "year": "2014",
+      "duration": "131 min",
+      "genre": "Action | Adventure | Sci-Fi",
+      "rating": "8,5",
+      "summary": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+      "director": "Bryan Singer",
+      "cast": "Patrick Stewart, Ian McKellen, Hugh Jackman"
+    }
+]
