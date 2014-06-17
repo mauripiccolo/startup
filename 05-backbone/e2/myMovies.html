@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index Topic 4</title>
+  <link href="normalize.css" rel="stylesheet" type="text/css"/>
+  <link href="style.css" rel="stylesheet" type="text/css" title="Default Style"/>
+  <script src="scripts/libs/jquery-1.11.1.js" type="text/javascript"></script>
+  <script src="scripts/libs/underscore.js" type="text/javascript"></script>
+  <script src="scripts/libs/backbone.js" type="text/javascript"></script>
+<body>
+  <h1>My Movies</h1>
+
+  <div id="mainContainer"></div>
+  <script type="text/template" id="tmplt-Movies">
+    <ul>
+    </ul>
+  </script>
+  <script type="text/template" id="tmplt-Movie">        
+    <div>
+      <%= name %> 
+      <span class="infoItem">[Info]</span>
+    </div>        
+  </script>
+
+  <div id="mainContainerInf"></div>    
+  <script type="text/template" id="tmplt-MoviesInf">
+    <ul>
+    </ul>
+  </script>
+  <script type="text/template" id="tmplt-MovieInf"
+    <div><%= name %> </div>
+    <div><%= year %> </div>
+    <div><%= duration %> </div>
+    <div><%= genre %> </div>
+    <div><%= rating %> </div>
+    <div><%= summary %> </div>
+    <div><%= director %> </div>
+    <div><%= cast %> </div>
+  </script>    
+  <script src="scripts/main.js" type="text/javascript"></script>   
+
+
+</body>
+</html>
