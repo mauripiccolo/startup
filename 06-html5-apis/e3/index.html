@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Topic 6</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" title="Default Style"/>
+    
+    <script type="text/javascript">
+      function saveText() {
+        //var textToWrite = document.getElementById("inputTextToSave").value;
+        document.querySelector('#text_zone').addEventListener('keyup', function(e) {
+          localStorage.setItem('value', this.value);
+        }, false);
+        console.log("saved in localStorage");
+        
+        var idbRequest = indexedDB.open('texts');
+        idbRequest.onsuccess = function(e) {
+          var db = this.result;
+          var textToSave = document.getElementById("#text_zone").value;
+          
+          var db = indexedDB.open('Texts', 'MyTexts');
+          if (db.version != '1') {          
+            db.createObjectStore('Texts', 'id',true);
+            db.setVersion('1');
+          }
+          var store = db.openObjectStore('texts');
+          var aux = store.put({name: 'textArea', value: textToSave});
+          console.log("saved in indexDB");
+        }      
+      };
+      
+    </script>
+  </head>
+  <body class= "body">            
+    <header>
+      <h1> </h1>
+    </header>
+    <aside class= "rigthSide">      
+    </aside>
+    <nav class= "leftSide">   
+    </nav>
+    <div  id="my-container" class= "content">      
+      <h3>Text to Save:</h3>        
+        <textarea id="text_zone" placeholder="Drop files here or start typing..."></textarea>                    
+        <button onclick="saveText()">Save</button>
+    </div>
+    <footer>
+      <h1>  </h1>
+    </footer>
+    <script type="text/javascript">
+      function handleFileSelect(evt) {
+        evt.stopPropagation();
+        evt.preventDefault();
+
+        var files = evt.dataTransfer.files;
+        var reader = new FileReader();
+        reader.onload = function(event) {
+             document.getElementById('text_zone').value = event.target.result;
+        }        
+        reader.readAsText(files[0],"UTF-8");
+      }
+
+      function handleDragOver(evt) {
+        evt.stopPropagation();
+        evt.preventDefault();
+        evt.dataTransfer.dropEffect = 'copy';
+      }
+      
+      var dropZone = document.getElementById('text_zone');
+      dropZone.addEventListener('dragover', handleDragOver, false);
+      dropZone.addEventListener('drop', handleFileSelect, false);
+    </script>
+  </body>
+</html>

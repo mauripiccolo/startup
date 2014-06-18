@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Topic 6</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" title="Default Style"/>
+  </head>
+  <body class= "body">    
+    <header>
+      <h1> </h1>
+    </header>
+    <aside class= "rigthSide">
+    </aside>
+    <nav class= "leftSide">
+    </nav>
+    <div  id="my-container" class= "content">
+      <h3>Canvas:</h3>
+       <canvas id="canvas" ></canvas>
+    </div>
+    <footer>
+      <h1>  </h1>
+    </footer>
+    <script>
+      var canvasContext = document.getElementById("canvas").getContext("2d");
+      canvasContext.fillRect(0, 50, 25, 25);
+      canvasContext.beginPath();
+      canvasContext.lineWidth = 15;
+      canvasContext.lineCap = 'round';
+      canvasContext.strokeStyle = 'rgba(255, 127, 0, 0.5)';
+      canvasContext.stroke();
+
+      var x = 0;
+      var y = 50;
+      var speed = 2;
+      function animate() {
+          reqAnimFrame = window.mozRequestAnimationFrame ||
+                      window.webkitRequestAnimationFrame ||
+                      window.msRequestAnimationFrame     ||
+                      window.oRequestAnimationFrame
+                      ;
+          reqAnimFrame(animate);
+          x += speed;
+          if(x <= 0 || x >= 280){
+              speed = -speed;
+          }
+          draw();
+      }
+      function draw() {
+          var canvasContext = document.getElementById("canvas").getContext("2d");          
+
+          canvasContext.clearRect(0, 0, 500, 170);
+          canvasContext.fillStyle = "#000000";
+          canvasContext.fillRect(x, y, 25, 25);
+      }
+      animate();
+    </script>
+  </body>
+</html>

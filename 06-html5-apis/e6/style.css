@@ -1,0 +1,48 @@
+body {
+  font: 14px Helvetica;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.rigthSide,
+.leftSide,
+.content,
+header{
+  display: block;  
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;  
+  margin-top: -20px;
+}
+.content,
+.rigthSide,
+.leftSide {
+    height: 850px;
+}
+.rigthSide,.leftSide {  
+  width: 60px;  
+  float: right;  
+  background-color: yellow;
+}
+.leftSide {
+  float: left;  
+}
+footer {
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  float: left;
+  background-color: #000000;
+  margin-top: -20px;
+}
+h1 {
+  text-align: center;
+}
+#canvas {  
+  width: 700px;
+  height:256px;
+  border: 3px dashed #ccc;
+  margin: 10px;  
+}
