@@ -7,50 +7,24 @@
     <link href="normalize.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" title="Default Style"/>
     <script src="libs/jquery-1.11.1.js"></script>
-    <script type="text/javascript">
-      
-      function saveText()
-      {
-        //var textToWrite = document.getElementById("inputTextToSave").value;
-        document.querySelector('#inputTextToSave').addEventListener('keyup', function(e) {
-          localStorage.setItem('value', this.value);
-        }, false);
-        console.log("saved in localStorage");
-        
-        var idbRequest = indexedDB.open('texts');
-        idbRequest.onsuccess = function(e) {
-          var db = this.result;
-          var textToSave = document.getElementById("#inputTextToSave").value;
-          
-          var db = indexedDB.open('Texts', 'MyTexts!');
-          if (db.version != '1') {          
-            db.createObjectStore('Texts', 'id',true);
-            db.setVersion('1');
-          }
-          var store = db.openObjectStore('texts');
-          var aux = store.put({name: 'textArea', value: textToSave});
-          console.log("saved in indexDB");
-        }
-      
-      };
-    </script>
 
   </head>
-  <body class= "body">            
+  <body class= "body">
     <header>
       <h1> </h1>
     </header>
-    <aside class= "rigthSide">      
+    <aside class= "rigthSide">
     </aside>
-    <nav class= "leftSide">   
+    <nav class= "leftSide">
     </nav>
-    <div  id="my-container" class= "content">      
-      <h3>Text to Save:</h3>        
-        <textarea id="inputTextToSave" placeholder="Start typing..."></textarea>                  
-        <button onclick="saveText()">Save</button>
+    <div  id="my-container" class= "content">
+      <h3>Text to Save:</h3>
+        <textarea id="inputTextToSave" placeholder="Start typing..."></textarea>
+        <button id= "buttonSave" >Save</button>
     </div>
     <footer>
       <h1>  </h1>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

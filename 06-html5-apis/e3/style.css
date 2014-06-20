@@ -40,7 +40,7 @@ footer {
 h1 {
   text-align: center;
 }
-#text_zone {
+#inputTextToSave {
   width:60%;
   height:256px;
   border: 3px dashed #ccc;
