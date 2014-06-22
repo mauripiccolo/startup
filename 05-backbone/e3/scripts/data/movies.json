@@ -1,0 +1,79 @@
+[
+    {        
+      "title": "The Amazing Spider-Man",
+      "year": "2014",
+      "duration": "142 min",
+      "genre": "Action | Adventure | Fantasy",
+      "rating": "7,4",
+      "summary": "Peter Parker runs the gauntlet as the mysterious company Oscorp sends up a slew of super villains against him, impacting his life.",
+      "director": "Marc Webb",
+      "cast": "Andrew Garfield, Emma Stone, Jamie Foxx",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BOTA5NDYxNTg0OV5BMl5BanBnXkFtZTgwODE5NzU1MTE@._V1_SX214_AL_.jpg"
+    },
+    {                
+      "title": "Godzilla",
+      "year": "2014",
+      "duration": "123 min",
+      "genre": "Action | Sci-Fi | Thriller",
+      "rating": "7,2",
+      "summary": "The world's most famous monster is pitted against malevolent creatures who, bolstered by humanity's scientific arrogance, threaten our very existence.",
+      "director": "Gareth Edwards",
+      "cast": "Aaron Taylor-Johnson, Elizabeth Olsen, Bryan Cranston",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMTQ0ODgzNjg2MV5BMl5BanBnXkFtZTgwNDkxMzc3MDE@._V1_SY317_CR0,0,214,317_AL_.jpg"
+    },
+    {
+      "title": "Maleficent",
+      "year": "2014",
+      "duration": "97 min",
+      "genre": "Action | Adventure | Family",
+      "rating": "7,5",
+      "summary": "A vengeful fairy is driven to curse an infant princess, only to discover that the child may be the one person who can restore peace to their troubled land.",
+      "director": "Robert Stromberg",
+      "cast": "Angelina Jolie, Elle Fanning, Sharlto Copley ",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMjAwMzAzMzExOF5BMl5BanBnXkFtZTgwOTcwMDA5MTE@._V1_SX214_AL_.jpg"
+    },
+    {
+      "title": "X-Men: Days of Future Past",
+      "year": "2014",
+      "duration": "131 min",
+      "genre": "Action | Adventure | Sci-Fi",
+      "rating": "8,5",
+      "summary": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+      "director": "Bryan Singer",
+      "cast": "Patrick Stewart, Ian McKellen, Hugh Jackman",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMTA2MDU0MjUxNDNeQTJeQWpwZ15BbWU4MDEwOTAwNTAx._V1_SX214_AL_.jpg"
+    },
+    {
+      "title": "A Million Ways to Die in the West",
+      "year": "2014",
+      "duration": "116 min",
+      "genre": "Comedy | Western",
+      "rating": "6,3",
+      "summary": "As a cowardly farmer begins to fall for the mysterious new woman in town, he must put his new-found courage to the test when her husband, a notorious gun-slinger, announces his arrival.",
+      "director": "Seth MacFarlane",
+      "cast": "Seth MacFarlane, Charlize Theron, Liam Neeson",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMTQ0NDcyNjg0MV5BMl5BanBnXkFtZTgwMzk4NTA4MTE@._V1_SX214_AL_.jpg"
+    },
+    {
+      "title": "300: Rise of an Empire",
+      "year": "2014",
+      "duration": "102 min",
+      "genre": "Action | Drama | Fantasy",
+      "rating": "6,5",
+      "summary": "Greek general Themistokles leads the charge against invading Persian forces led by mortal-turned-god Xerxes and Artemisia, vengeful commander of the Persian navy.",
+      "director": "Noam Murro",
+      "cast": "Sullivan Stapleton, Eva Green, Lena Headey",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMTEwNTU2MjAwMDdeQTJeQWpwZ15BbWU3MDk2Njc2Njk@._V1_SY317_CR0,0,214,317_AL_.jpg"
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "year": "2013",
+      "duration": "180 min",
+      "genre": "Biography | Comedy | Crime ",
+      "rating": "8,3",
+      "summary": "Having endured his legendary twelve labors, Hercules, the Greek demigod, has his life as a sword-for-hire tested when the King of Thrace and his daughter seek his aid in defeating a tyrannical warlord.",
+      "director": " Martin Scorsese",
+      "cast": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+      "poster": "http://ia.media-imdb.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX214_AL_.jpg"
+    }
+]

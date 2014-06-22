@@ -1,0 +1,93 @@
+body {
+  font: 14px Helvetica;
+  width: 100%;
+  height: 100%;
+  background-color: #3366FF;
+}
+section {
+  width: 62%;
+  margin-left: 5px;
+  margin-right: 15px;
+  float: right;
+}
+nav {
+  width: 34%;
+  height: 750px;
+  margin-right: 5px;
+  margin-left: 10px;
+  float: left;
+  background-color: #CCCCCC;
+  border: 3px dashed #333333;
+  
+}
+header {
+  width: 100%;
+  height: 50px; 
+}
+section {
+  height: 750px;
+  background-color: #CCCCCC;
+  border: 3px dashed #333333;  
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.infoItem,
+.editItem,
+.addItem {
+  cursor: pointer; 
+  color: blue; 
+  font-family: sans-serif;
+}
+.deleteItem {
+  cursor: pointer; 
+  color: red; 
+  font-family: sans-serif;
+}
+.addItem {
+  float: left;
+  margin-left: 40%;
+  margin-top: 50px;
+}
+.contMain {
+  padding-top: 10px;
+}
+.contInfo {
+  height: 180px;
+  padding-top: 21px;
+  border-bottom: 3px dashed #333333;
+  padding-left: 20px;
+}
+.contForm {
+  height: 480px;
+  width: 100px;  
+}
+form {
+  height: 200px;
+  width: 400px;
+  padding-left: 200px;
+  padding-top: 5px;
+}
+#title,
+#year,
+#duration,
+#genre,
+#rating,
+#sum,
+#dir,
+#cast,
+#poster
+ {
+  width: 400px;
+  margin-bottom: 10px;
+}
+.poster {
+   width: 120px;
+   height: 160px;
+   margin-right: 20px;
+   margin-top: -30px;
+   float: right;
+}
