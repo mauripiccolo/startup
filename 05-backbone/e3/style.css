@@ -17,8 +17,7 @@ nav {
   margin-left: 10px;
   float: left;
   background-color: #CCCCCC;
-  border: 3px dashed #333333;
-  
+  border: 3px dashed #333333; 
 }
 header {
   width: 100%;
@@ -29,13 +28,11 @@ section {
   background-color: #CCCCCC;
   border: 3px dashed #333333;  
 }
-
 h1,
 h3 {
   text-align: center;
 }
-
-.infoItem,
+.getInfoItem,
 .editItem,
 .addItem {
   cursor: pointer; 
@@ -63,7 +60,7 @@ h3 {
 }
 .contForm {
   height: 480px;
-  width: 100px;  
+  width: 100px;
 }
 form {
   height: 200px;
@@ -71,16 +68,7 @@ form {
   padding-left: 200px;
   padding-top: 5px;
 }
-#title,
-#year,
-#duration,
-#genre,
-#rating,
-#sum,
-#dir,
-#cast,
-#poster
- {
+.formItem {
   width: 400px;
   margin-bottom: 10px;
 }

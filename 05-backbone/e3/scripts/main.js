@@ -17,7 +17,7 @@ MyMovies.Collections.Movies = Backbone.Collection.extend({
 MyMovies.Templates.movies = _.template($("#tmplt-Movies").html());
 
 MyMovies.Views.Movies = Backbone.View.extend({
-    el: $("#mainContainer"),
+    el: '#mainContainer',
     template: MyMovies.Templates.movies,
     events: {
       'click .addItem': 'addMovie',
@@ -81,7 +81,7 @@ MyMovies.Views.Movie = Backbone.View.extend({
     tagName: "li",
     template: MyMovies.Templates.movie,
     events: {
-      'click .infoItem': 'showMovieInf',
+      'click .getInfoItem': 'showMovieInf',
       'click .deleteItem': 'deleteMovie',
       'click .editItem': 'editMovie',
     },
@@ -107,9 +107,8 @@ MyMovies.Views.Movie = Backbone.View.extend({
     deleteMovie: function(){
       console.log('Movie delete');
       $(this.el).remove();
-      for(var i= 0; i< 9; i++){
-        $("#item").remove();
-        }
+      $(".infoItem").remove();
+      $(".poster").remove();
     },
 
     editMovie: function(){
@@ -123,14 +122,13 @@ MyMovies.Views.Movie = Backbone.View.extend({
         $('#dir').val(this.model.toJSON().director);
         $('#cast').val(this.model.toJSON().cast);
         $('#poster').val(this.model.toJSON().poster);
-    }    
-
+    }
 });
 //**info
 
 MyMovies.Templates.movieInf = _.template($("#tmplt-MovieInf").html());
 MyMovies.Views.MovieInf = Backbone.View.extend({
-    el: $("#mainContainerInf"),
+    el: '#mainContainerInf',
     template: MyMovies.Templates.movieInf,
 
     render: function () {

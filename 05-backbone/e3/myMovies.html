@@ -19,46 +19,46 @@
     <script type="text/template" id="tmplt-Movies">
       <ul>
       </ul>
-      <span class="addItem">[Add Movie]</span>      
+      <span class="addItem">[Add Movie]</span>
     </script>
     <script type="text/template" id="tmplt-Movie">
       <div>
         <%= title %>
-        <span class="editItem">[Edit]</span> 
+        <span class="editItem">[Edit]</span>
         <span class="deleteItem">[Remove]</span>
-        <span class="infoItem">[Info]</span>
-      </div>  
+        <span class="getInfoItem">[Info]</span>
+      </div>
     </script>
   </nav>
   <section>
     <article>
       <h3>Movie Info</h3>
       <div id="mainContainerInf" class="contInfo"> </div>
-      <script type="text/template" id="tmplt-MovieInf">      
-        <div id="item"> <strong> Title: </strong> <%= title %> </div>
-        <img id="item" class="poster" src=<%= poster %>>
-        <div id="item"> <strong> Year: </strong> <%= year %> </div>
-        <div id="item"> <strong> Duration: </strong> <%= duration %> </div>
-        <div id="item"> <strong> Genre: </strong> <%= genre %> </div>
-        <div id="item"> <strong> Rating: </strong> <%= rating %> </div>      
-        <div id="item"> <strong> Director: </strong> <%= director %> </div>
-        <div id="item"> <strong> Cast: </strong> <%= cast %> </div>
-        <div id="item"> <strong> Summary: </strong> <%= summary %> </div>
+      <script type="text/template" id="tmplt-MovieInf">
+        <div class="infoItem" > <strong> Title: </strong> <%= title %> </div>
+        <img class="poster" src=<%= poster %>>
+        <div class="infoItem"> <strong> Year: </strong> <%= year %> </div>
+        <div class="infoItem"> <strong> Duration: </strong> <%= duration %> </div>
+        <div class="infoItem"> <strong> Genre: </strong> <%= genre %> </div>
+        <div class="infoItem"> <strong> Rating: </strong> <%= rating %> </div>
+        <div class="infoItem"> <strong> Director: </strong> <%= director %> </div>
+        <div class="infoItem"> <strong> Cast: </strong> <%= cast %> </div>
+        <div class="infoItem"> <strong> Summary: </strong> <%= summary %> </div>
       </script>
     </article>
     <article>
       <h3>Movie Form</h3>
-      <div id="mainContainerForm" class="contForm"> 
+      <div id="mainContainerForm" class="contForm">
         <form id="form">
-          <strong>Title: </strong> <input type="title" name="title" id="title">
-          <strong>Year:  </strong> <input type="year" name="year" id="year">
-          <strong>Duration: </strong> <input type="duration" name="duration" id="duration">
-          <strong>Genre: </strong> <input type="genre" name="genre" id="genre">
-          <strong>Rating: </strong> <input type="rating" name="rating" id="rating">
-          <strong>Summary: </strong> <input type="summary" name="summary" id="sum">
-          <strong>Director: </strong> <input type="director" name="director" id="dir">
-          <strong>Cast: </strong> <input type="cast" name="cast" id="cast">
-          <strong>Poster: </strong> <input type="poster" name="poster" id="poster">
+          <strong>Title: </strong> <input type="title" name="title" id="title" class="formItem">
+          <strong>Year:  </strong> <input type="year" name="year" id="year" class="formItem">
+          <strong>Duration: </strong> <input type="duration" name="duration" id="duration" class="formItem">
+          <strong>Genre: </strong> <input type="genre" name="genre" id="genre" class="formItem">
+          <strong>Rating: </strong> <input type="rating" name="rating" id="rating" class="formItem">
+          <strong>Summary: </strong> <input type="summary" name="summary" id="sum" class="formItem">
+          <strong>Director: </strong> <input type="director" name="director" id="dir" class="formItem">
+          <strong>Cast: </strong> <input type="cast" name="cast" id="cast" class="formItem">
+          <strong>Poster: </strong> <input type="poster" name="poster" id="poster" class="formItem">
         </form>
       </div>
     </article>
